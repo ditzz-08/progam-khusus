@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HALO SELAMAT DATANG</h1>
+        <input type="text" id="nameInput" placeholder="MASUKKAN NAMA ANDA">
+        <button onclick="greetUser()">Submit</button>
+        <p id="greeting"></p>
+
+        <div id="questionSection" style="display:none;">
+            <input type="text" id="moodInput" placeholder="Gimana kabarmu (baik/gak)">
+            <button onclick="checkMood()">Submit</button>
+            <p id="moodResponse"></p>
+        </div>
+
+        <div id="apologySection" style="display:none;">
+            <input type="text" id="apologyInput" placeholder="Maafin aku yaa sayang (iyaa/gak)">
+            <button onclick="checkApology()">Submit</button>
+            <p id="apologyResponse"></p>
+        </div>
+
+        <div id="testSection" style="display:none;">
+            <input type="number" id="testInput" placeholder="Rate:">
+            <button onclick="checkTest()">Submit</button>
+            <div id="warning"></div>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
